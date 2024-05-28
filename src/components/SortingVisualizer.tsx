@@ -13,9 +13,24 @@ const PRIMARY_COLOR = "pink";
 // This is the color of array bars that are being compared throughout the animations.
 const SECONDARY_COLOR = "green";
 
+const randomIntFromInterval = (min: number, max: number): number => {
+  // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+const arraysAreEqual = (arrayOne: number[], arrayTwo: number[]): boolean => {
+  if (arrayOne.length !== arrayTwo.length) return false;
+  for (let i = 0; i < arrayOne.length; i++) {
+    if (arrayOne[i] !== arrayTwo[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
 const SortingVisualizer: React.FC = () => {
   const [array, setArray] = useState<number[]>([]);
-
+  //On each mount reset the array
   useEffect(() => {
     resetArray();
   }, []);
@@ -45,22 +60,6 @@ const SortingVisualizer: React.FC = () => {
       </div>
     </>
   );
-};
-
-// From https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
-const randomIntFromInterval = (min: number, max: number): number => {
-  // min and max included
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
-
-const arraysAreEqual = (arrayOne: number[], arrayTwo: number[]): boolean => {
-  if (arrayOne.length !== arrayTwo.length) return false;
-  for (let i = 0; i < arrayOne.length; i++) {
-    if (arrayOne[i] !== arrayTwo[i]) {
-      return false;
-    }
-  }
-  return true;
 };
 
 export default SortingVisualizer;
