@@ -1,10 +1,4 @@
 /* Ensure the body takes up the full height of the viewport */
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
 
 /* Flexbox for centering and layout */
 .array-container {
@@ -42,6 +36,6 @@ header {
   font-size: 3vw; /* Responsive font size */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  margin-bottom: 90px; /* Responsive margin */
+  margin-bottom: 13vh; /* Responsive margin */
   padding-top: 2vh; /* Responsive padding */
 }
