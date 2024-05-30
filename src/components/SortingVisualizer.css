@@ -1,5 +1,4 @@
-/* Ensure the body takes up the full height of the viewport */
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 /* Flexbox for centering and layout */
 .array-container {
   display: flex;
@@ -31,11 +30,12 @@
 }
 
 header {
-  color: white;
+  color: rgb(90, 96, 151);
   text-align: center;
   font-size: 3vw; /* Responsive font size */
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 13vh; /* Responsive margin */
   padding-top: 2vh; /* Responsive padding */
 }
