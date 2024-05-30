@@ -38,6 +38,7 @@ const SortingVisualizer: React.FC = () => {
 
   const mergeSort = () => {
     setIsSorting(true);
+    console.log(isSorting);
     const animations = getMergeSortAnimations(array);
     console.log(animations, animations.length);
     for (let i = 0; i < animations.length; i++) {
@@ -62,7 +63,9 @@ const SortingVisualizer: React.FC = () => {
         }, i * ANIMATION_SPEED_MS);
       }
     }
-    setIsSorting(false);
+    setTimeout(() => {
+      setIsSorting(false);
+    }, animations.length * ANIMATION_SPEED_MS);
   };
 
   const quickSort = () => {
