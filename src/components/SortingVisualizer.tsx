@@ -58,6 +58,11 @@ const SortingVisualizer: React.FC = () => {
           ></div>
         ))}
       </div>
+      <div className="button-container">
+        <button className="button" onClick={resetArray}>
+          Generate New Array
+        </button>
+      </div>
     </>
   );
 };
