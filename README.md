@@ -47,4 +47,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## TODOS
 
-Check todos [here]()
+Check todos [here](https://github.com/elBanna00/sorting-visualizer/blob/main/TODO.md)
